@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "identity": {
+    "applicationId": "com.chesson.app.desktop",
+    "packageName": "com.chesson.app",
+    "mainClass": "com.chesson.app.Launcher",
+    "entryDelegate": "com.chesson.app.ChessonApp",
+    "productName": "Chesson",
+    "displayName": "Chesson 1.0",
+    "edition": "Standard Desktop Release",
+    "channel": "stable",
+    "publisher": "Chesson Interactive",
+    "copyright": "© 2026 Chesson. All rights reserved."
+  },
+  "version": {
+    "semantic": "1.0.0",
+    "major": 1,
+    "minor": 0,
+    "patch": 0,
+    "buildNumber": 1000,
+    "releaseType": "GA",
+    "releaseDate": "2026-11-15T16:33:00+03:00",
+    "protocolVersion": 2,
+    "storageSchemaVersion": 1
+  },
+  "runtime": {
+    "minJavaVersion": "17",
+    "recommendedJavaVersion": "21",
+    "uiFramework": "JavaFX",
+    "osTargets": [
+      {
+        "platform": "windows",
+        "arch": ["x64"],
+        "executable": "ChessonApp.exe",
+        "jarArtifact": "ChessonApp.jar",
+        "iconResource": "chesson_icon.ico"
+      }
+    ]
+  },
+  "storage": {
+    "rootDirectoryName": "Chesson",
+    "windowsPathTemplate": "%APPDATA%\\Chesson",
+    "manifestFile": "manifest.json",
+    "versionManifestFile": "version_manifest.json",
+    "encoding": "UTF-8",
+    "format": "BINARY_ENCRYPTED",
+    "directories": {
+      "accounts": "accounts",
+      "profiles": "profiles",
+      "wallets": "wallets",
+      "clans": "clans",
+      "groups": "groups",
+      "tournaments": "tournaments",
+      "matches": "matches",
+      "security": "security",
+      "resources": "resources"
+    }
+  },
+  "security": {
+    "passwordHashing": "SHA-256-SALTED",
+    "saltBytes": 16,
+    "auditLogFile": "security/audit.log",
+    "matchHistoryFile": "matches/history.log",
+    "integrity": {
+      "algorithm": "SHA-256",
+      "jarChecksum": "REPLACE_WITH_ACTUAL_JAR_SHA256_AFTER_BUILD",
+      "exeChecksum": "REPLACE_WITH_ACTUAL_EXE_SHA256_AFTER_BUILD"
+    }
+  },
+  "features": {
+    "onlineMultiplayer": true,
+    "voiceChat": true,
+    "clans": true,
+    "groups": true,
+    "tournaments": ["KNOCKOUT", "LEAGUE"],
+    "proceduralPuzzles": {
+      "enabled": true,
+      "modes": ["DAILY", "WEEKLY", "UNLIMITED"],
+      "solverVerified": true
+    },
+    "economy": {
+      "currency": "Coin",
+      "clanCreationCost": 50
+    }
+  },
+  "changelog": [
+    {
+      "version": "1.0.0",
+      "date": "2026-11-15",
+      "highlights": [
+        "İlk kararlı 1.0.0 masaüstü sürümü yayınlandı. Klanlar, gruplar ve turnuvalara katılıp yarışabilir, güzel ödüller toplayabilir ve çevrimiçi bir şekilde oynayabilirsiniz.",
+        "AppData\\Roaming\\Chesson kalıcı ve şifreli depolama altyapısı eklendi.",
+        "Klanlar, Gruplar, Turnuvalar ve sesli sohbet entegrasyonu tamamlandı.",
+        "Gerçek zamanlı doğrulamalı Günlük, Haftalık ve Sınırsız bulmaca motoru eklendi."
+      ]
+    }
+  ]
+}

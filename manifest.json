@@ -1,0 +1,10 @@
+{
+  "app": "Chesson Server & Engine",
+  "version": "2.5.0-WAN",
+  "storageFormat": "BINARY_ENCRYPTED",
+  "created_at": "2026-11-16 22:37:14",
+  "directories": [
+    "accounts", "profiles", "wallets", "clans",
+    "groups", "tournaments", "matches", "security", "resources"
+  ]
+}

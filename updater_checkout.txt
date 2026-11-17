@@ -1,0 +1,17 @@
+# Chesson Updater Configuration
+app_name=Chesson
+current_version=1.0.0
+build_number=1000
+channel=stable
+platform=windows-x64
+
+# GitHub Sürüm ve İndirme Bağlantıları
+manifest_url=https://github.com/KULLANICI_ADIN/Chesson/releases/latest/download/version_manifest_1.0.json
+release_url=https://github.com/Playergameplay142/Chesson/releases/latest
+download_url=https://github.com/Playergameplay142/Chesson/releases/latest/download/chesson-v1.0-setup.exe
+
+# Güncelleme Kontrol Ayarları
+auto_check=true
+check_interval_hours=24
+verify_checksum=true
+last_check_status=OK
